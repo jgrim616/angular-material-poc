@@ -1,5 +1,5 @@
 <div class="grid-container">
-  <mat-grid-list cols="2" rowHeight="350px">
+  <mat-grid-list cols="2" rowHeight="340px">
 
     <mat-grid-tile [colspan]=2 [rowspan]=1>
       <mat-card class="dashboard-card">
@@ -16,11 +16,32 @@
           </mat-card-title>
         </mat-card-header>
         <mat-card-content class="dashboard-card-content">
-          <!-- <mat-grid-tile [colspan]=6 [rowspan]=1> -->
-          <div>
-            <img src="assets/img/customer_manager.svg"> Customer Manager
-          </div>
-          <!-- </mat-grid-tile> -->
+          <mat-grid-list cols="6" rowHeight="220px">
+            <mat-grid-tile>
+              <a href="customer-manager" class="a-iconnav">
+                <img src="assets/img/customer_manager.svg" class="img-iconnav">
+                <br> Customer Manager
+              </a>
+            </mat-grid-tile>
+            <mat-grid-tile>
+              <a href="claim-manager" class="a-iconnav">
+                <img src="assets/img/claims_manager.svg" class="img-iconnav">
+                <br> Claims Manager
+              </a>
+            </mat-grid-tile>
+            <mat-grid-tile>
+              <a href="fee-sched-load-compare" class="a-iconnav">
+                <img src="assets/img/fee_schedule_manager.svg" class="img-iconnav">
+                <br> Fee Schedule Load Compare
+              </a>
+            </mat-grid-tile>
+            <mat-grid-tile>
+              <a href="dm-ui" class="a-iconnav">
+                <img src="assets/img/ancillary_data_maintenance.svg" class="img-iconnav">
+                <br> ABM Data Maintenance
+              </a>
+            </mat-grid-tile>
+          </mat-grid-list>
         </mat-card-content>
       </mat-card>
     </mat-grid-tile>

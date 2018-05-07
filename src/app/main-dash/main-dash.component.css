@@ -24,3 +24,23 @@
   font-size: 1.1rem;
   color: #65646a;
 }
+
+.img {
+  width: 65%;
+  max-width: 140px;
+}
+
+.a-iconnav {
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+  text-decoration-style: initial !important;
+  text-decoration-color: initial !important;
+  color: #65646a !important;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.img-iconnav {
+  width: 140px;
+  max-width: 140px;
+}
