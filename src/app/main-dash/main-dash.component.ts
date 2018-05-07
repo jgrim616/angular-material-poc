@@ -1,11 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { grow } from '../../shared/animations';
 
 @Component({
   selector: 'main-dash',
   templateUrl: './main-dash.component.html',
-  styleUrls: ['./main-dash.component.css']
+  styleUrls: ['./main-dash.component.css'],
+  animations: [grow]
 })
 export class MainDashComponent {
+  state: string;
+
+  toggleAnimation(state) {
+    this.state = this.state === 'yes' ? 'no' : 'yes';
+    // this.state = this.state === 'in' ? 'out' : 'in';
+  }
+
   // cards = [
   //   {
   //     title: 'My Applications',

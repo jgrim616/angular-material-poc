@@ -6,6 +6,7 @@
         <mat-card-header>
           <mat-card-title>
             My Applications
+            <button (click)=toggleAnimation()>Toggle Animation!</button>
             <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
               <mat-icon>more_vert</mat-icon>
             </button>
@@ -18,25 +19,25 @@
         <mat-card-content class="dashboard-card-content">
           <mat-grid-list cols="6" rowHeight="220px">
             <mat-grid-tile>
-              <a href="customer-manager" class="a-iconnav">
+              <a href="customer-manager" class="a-iconnav" [@grow]="state">
                 <img src="assets/img/customer_manager.svg" class="img-iconnav">
                 <br> Customer Manager
               </a>
             </mat-grid-tile>
             <mat-grid-tile>
-              <a href="claim-manager" class="a-iconnav">
+              <a href="claim-manager" class="a-iconnav" [@grow]="state">
                 <img src="assets/img/claims_manager.svg" class="img-iconnav">
                 <br> Claims Manager
               </a>
             </mat-grid-tile>
             <mat-grid-tile>
-              <a href="fee-sched-load-compare" class="a-iconnav">
+              <a href="fee-sched-load-compare" class="a-iconnav" [@grow]="state">
                 <img src="assets/img/fee_schedule_manager.svg" class="img-iconnav">
                 <br> Fee Schedule Load Compare
               </a>
             </mat-grid-tile>
             <mat-grid-tile>
-              <a href="dm-ui" class="a-iconnav">
+              <a href="dm-ui" class="a-iconnav" [@grow]="state">
                 <img src="assets/img/ancillary_data_maintenance.svg" class="img-iconnav">
                 <br> ABM Data Maintenance
               </a>
