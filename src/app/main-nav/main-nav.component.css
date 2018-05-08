@@ -5,10 +5,10 @@
 .sidenav {
   width: 240px;
   box-shadow: 3px 0 6px rgba(0, 0, 0, 0.24);
-  background-color: #3a4651;
+  /* background-color: #3a4651; */
 }
 
-.mat-list-item {
+/* .mat-list-item {
   font-family: 'Libre Franklin', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol';
@@ -59,4 +59,4 @@
 
 .fa-fw {
   width: 2em;
-}
+} */
