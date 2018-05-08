@@ -38,6 +38,12 @@
   color: #65646a !important;
   font-size: 1rem;
   font-weight: 400;
+  transition: 150ms ease-in-out;
+  transform-origin: top;
+}
+
+.a-iconnav:hover {
+  transform: scale(1.1);
 }
 
 .img-iconnav {

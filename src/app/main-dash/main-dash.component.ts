@@ -1,11 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { minimize } from '../../shared/animations';
 
 @Component({
   selector: 'main-dash',
   templateUrl: './main-dash.component.html',
-  styleUrls: ['./main-dash.component.css']
+  styleUrls: ['./main-dash.component.css'],
+  animations: [minimize]
 })
 export class MainDashComponent {
+  state: string;
+
+  toggleAnimation(state) {
+    // this.state = this.state === 'yes' ? 'no' : 'yes';
+    // this.state = this.state === 'in' ? 'out' : 'in';
+    this.state = this.state === 'up' ? 'down' : 'up';
+  }
+
   // cards = [
   //   {
   //     title: 'My Applications',
