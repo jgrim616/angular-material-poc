@@ -1,0 +1,29 @@
+.mat-card-title {
+  font-size: 1.1rem !important;
+  color: #65646a;
+}
+
+.iconnav img:hover {
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.iconnav a {
+  text-decoration: none !important;
+  color: #65646a !important;
+  font-size: 1rem;
+}
+.iconnav img {
+  width: 140px;
+}
+.iconnav img:hover {
+  width: 160px;
+}
+
+.vertice {
+  width: 200px;
+  height: 52px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

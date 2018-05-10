@@ -1,0 +1,22 @@
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+@import '../src/assets/css/healthe_palette.scss';
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// **Be sure that you only ever include this mixin once!**
+@include mat-core();
+
+// Define the theme.
+$vertice-app-primary: mat-palette($mat-vertice, 100, 50, 200);
+$vertice-app-accent: mat-palette($mat-pink, A200, A100, A400);
+$vertice-app-theme: mat-light-theme($vertice-app-primary, $vertice-app-accent);
+
+// Include the theme styles for only specified components or use angular-material-theme for all of them
+//    List of components can be found here:
+//        https://github.com/angular/material2/blob/a292d31023abd4926db322a9a41d71db09e189b5/src/lib/core/theming/_all-theme.scss
+// @include mat-core-theme($vertice-app-theme);
+// @include mat-button-theme($vertice-app-theme);
+// @include mat-checkbox-theme($vertice-app-theme);
+// @include angular-material-theme($vertice-app-theme);
+@include mat-toolbar-theme($vertice-app-theme);
