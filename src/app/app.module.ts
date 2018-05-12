@@ -21,6 +21,7 @@ import { MainNavComponent } from './main-nav/main-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MainTableComponent } from './main-table/main-table.component';
 import { MainDashComponent } from './main-dash/main-dash.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { MainDashComponent } from './main-dash/main-dash.component';
     MainDashComponent
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
     MatCheckboxModule,

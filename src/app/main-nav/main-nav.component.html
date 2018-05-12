@@ -5,31 +5,31 @@
       <img src="assets/img/healthesystems-logo-KO-notag.svg" width="155">
     </mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item class="active" href="dashboard">
+      <a mat-list-item routerLinkActive="active" routerLink="/dashboard" href="dashboard">
         <i class="fa fa-home fa-fw"></i>
         Dashboard
       </a>
-      <a mat-list-item href="customers">
+      <a mat-list-item routerLinkActive="active" routerLink="/customers" href="customers">
         <i class="fa fa-th-large fa-fw"></i>
         Customers
       </a>
-      <a mat-list-item href="claims">
+      <a mat-list-item routerLinkActive="active" routerLink="/claims" href="claims">
         <i class="fa fa-chart-area fa-fw"></i>
         Claims
       </a>
-      <a mat-list-item href="tables">
+      <a mat-list-item routerLinkActive="active" routerLink="/tables" href="tables">
         <i class="fas fa-table fa-fw"></i>
         Tables
       </a>
-      <a mat-list-item href="forms">
+      <a mat-list-item routerLinkActive="active" routerLink="/forms" href="forms">
         <i class="fas fa-edit fa-fw"></i>
         Forms
       </a>
-      <a mat-list-item href="">
+      <a mat-list-item routerLinkActive="active" routerLink="/ui" href="ui">
         <i class="fas fa-desktop fa-fw"></i>
         UI Elements
       </a>
-      <a mat-list-item href="">
+      <a mat-list-item routerLinkActive="active" routerLink="/menu" href="menu">
         <i class="fas fa-sitemap fa-fw"></i>
         Menu Levels
       </a>
@@ -42,7 +42,8 @@
       </button>
       <img src="assets/img/vertice.svg" class="vertice">
     </mat-toolbar>
-    <main-dash></main-dash>
+    <!-- <main-dash></main-dash> -->
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
 
