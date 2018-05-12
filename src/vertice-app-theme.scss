@@ -1,16 +1,18 @@
 @import '~@angular/material/theming';
-// Plus imports for other components in your app.
-@import '../src/assets/css/healthe_palette.scss';
+@import '../src/assets/css/lib/healthe_palette.scss';
 
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
 // **Be sure that you only ever include this mixin once!**
 @include mat-core();
 
-// Define the theme.
-$vertice-app-primary: mat-palette($mat-vertice, 100, 50, 200);
-$vertice-app-accent: mat-palette($mat-pink, A200, A100, A400);
-$vertice-app-theme: mat-light-theme($vertice-app-primary, $vertice-app-accent);
+// Vertice Dashboard Theme
+$vertice-dashboard-primary: mat-palette($vertice-header-light-blue-gray);
+$vertice-dashboard-accent: mat-palette($mat-pink, A200, A100, A400);
+$vertice-dashboard-theme: mat-light-theme(
+  $vertice-dashboard-primary,
+  $vertice-dashboard-accent
+);
 
 // Include the theme styles for only specified components or use angular-material-theme for all of them
 //    List of components can be found here:
@@ -19,4 +21,32 @@ $vertice-app-theme: mat-light-theme($vertice-app-primary, $vertice-app-accent);
 // @include mat-button-theme($vertice-app-theme);
 // @include mat-checkbox-theme($vertice-app-theme);
 // @include angular-material-theme($vertice-app-theme);
-@include mat-toolbar-theme($vertice-app-theme);
+@include mat-toolbar-theme($vertice-dashboard-theme);
+
+/////////////////////////////////////////////////////////////////////
+// Custom Theme Colors
+////////////////////////////////////////////////////////////////////
+.sidebar-header,
+.sidenav {
+  background-color: mat-color($vertice-header-dark-gray, 500);
+}
+
+.mat-card-title,
+.iconnav a,
+.dashboard-card-content {
+  color: mat-color($vertice-card-font-gray, 500) !important;
+}
+
+.mat-list-item {
+  color: mat-color($vertice-card-font-gray, 50, 0.5) !important;
+}
+
+.mat-list-item:hover {
+  background-color: mat-color($vertice-header-dark-gray, 700);
+  color: mat-color($vertice-card-font-gray, 50) !important;
+}
+
+.active {
+  background-color: mat-color($vertice-header-dark-gray, A100);
+  color: mat-color($vertice-card-font-gray, 50) !important;
+}

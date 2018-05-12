@@ -1,0 +1,126 @@
+// Contrast colors are hard-coded because it is too difficult (probably impossible) to
+// calculate them. These contrast colors are pulled from the public Material Design spec swatches.
+// While the contrast colors in the spec are not prescriptive, we use them for convenience.
+
+// See the standard Material Palettes at: https://material.io/guidelines/style/color.html#color-color-palette
+// Code for the standard Material Palettes: https://github.com/angular/material2/blob/40773c59be0c9d287194a55241dea1117677b600/src/lib/core/theming/_palette.scss
+
+$black-87-opacity: rgba(black, 0.87);
+$white-87-opacity: rgba(white, 0.87);
+$black-12-opacity: rgba(black, 0.12);
+$white-12-opacity: rgba(white, 0.12);
+$black-6-opacity: rgba(black, 0.06);
+$white-6-opacity: rgba(white, 0.06);
+
+$dark-primary-text: rgba(black, 0.87);
+$dark-secondary-text: rgba(black, 0.54);
+$dark-disabled-text: rgba(black, 0.38);
+$dark-dividers: rgba(black, 0.12);
+$dark-focused: rgba(black, 0.12);
+$light-primary-text: white;
+$light-secondary-text: rgba(white, 0.7);
+$light-disabled-text: rgba(white, 0.5);
+$light-dividers: rgba(white, 0.12);
+$light-focused: rgba(white, 0.12);
+
+$vertice-header-light-blue-gray: (
+  50: #fdfdfd,
+  100: #f9fafb,
+  200: #f6f7f8,
+  300: #f2f4f5,
+  400: #eff1f3,
+  500: #eceff1,
+  600: #eaedef,
+  700: #e7ebed,
+  800: #e4e8eb,
+  900: #dfe4e7,
+  A100: #ffffff,
+  A200: #ffffff,
+  A400: #ffffff,
+  A700: #ffffff,
+  contrast:
+    (
+      50: #000000,
+      100: #000000,
+      200: #000000,
+      300: #000000,
+      400: #000000,
+      500: #000000,
+      600: #000000,
+      700: #000000,
+      800: #000000,
+      900: #000000,
+      A100: #000000,
+      A200: #000000,
+      A400: #000000,
+      A700: #000000
+    )
+);
+
+$vertice-header-dark-gray: (
+  50: #e7e9ea,
+  100: #c4c8cb,
+  200: #9da3a8,
+  300: #757e85,
+  400: #58626b,
+  500: #3a4651,
+  600: #343f4a,
+  700: #2d363f,
+  800: #252f37,
+  900: #182027,
+  A100: #00b3e3,
+  A200: #3a9cff,
+  A400: #0783ff,
+  A700: #0076ec,
+  contrast:
+    (
+      50: #000000,
+      100: #000000,
+      200: #000000,
+      300: #ffffff,
+      400: #ffffff,
+      500: #ffffff,
+      600: #ffffff,
+      700: #ffffff,
+      800: #ffffff,
+      900: #ffffff,
+      A100: #000000,
+      A200: #000000,
+      A400: #ffffff,
+      A700: #ffffff
+    )
+);
+
+$vertice-card-font-gray: (
+  50: #ffffff,
+  100: #d1d1d2,
+  200: #b2b2b5,
+  300: #939397,
+  400: #7c7b80,
+  500: #65646a,
+  600: #5d5c62,
+  700: #535257,
+  800: #49484d,
+  900: #37363c,
+  A100: #ad9bf7,
+  A200: #866bf4,
+  A400: #572dff,
+  A700: #4314ff,
+  contrast:
+    (
+      50: #000000,
+      100: #000000,
+      200: #000000,
+      300: #000000,
+      400: #ffffff,
+      500: #ffffff,
+      600: #ffffff,
+      700: #ffffff,
+      800: #ffffff,
+      900: #ffffff,
+      A100: #000000,
+      A200: #000000,
+      A400: #ffffff,
+      A700: #ffffff
+    )
+);

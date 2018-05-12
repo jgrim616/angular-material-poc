@@ -32,8 +32,8 @@ export const slide = trigger('slide', [
 export const minimize = trigger('minimize', [
   state('down', style({ transform: 'translate3d(0, 0, 0)' })),
   state('up', style({ transform: 'translate3d(0, -150%, 0)' })),
-  transition('down => up', animate('200ms ease-in')),
-  transition('up => down', animate('200ms ease-out'))
+  transition('up => down', animate('200ms ease-in')),
+  transition('* => up', animate('200ms ease-out'))
 ]);
 
 export const fade = trigger('fade', [

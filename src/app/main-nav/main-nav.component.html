@@ -2,7 +2,7 @@
   <mat-sidenav #drawer class="sidenav" fixedInViewport="true" [attr.role]="isHandset ? 'dialog' : 'navigation'" [mode]="(isHandset | async)!.matches ? 'over' : 'side'"
     [opened]="!(isHandset | async)!.matches">
     <mat-toolbar class="sidebar-header">
-      <img src="assets/img/healthesystems-logo-KO-notag.svg" class="vertice" width="155">
+      <img src="assets/img/healthesystems-logo-KO-notag.svg" width="155">
     </mat-toolbar>
     <mat-nav-list>
       <a mat-list-item class="active" href="dashboard">
@@ -16,6 +16,22 @@
       <a mat-list-item href="claims">
         <i class="fa fa-chart-area fa-fw"></i>
         Claims
+      </a>
+      <a mat-list-item href="tables">
+        <i class="fas fa-table fa-fw"></i>
+        Tables
+      </a>
+      <a mat-list-item href="forms">
+        <i class="fas fa-edit fa-fw"></i>
+        Forms
+      </a>
+      <a mat-list-item href="">
+        <i class="fas fa-desktop fa-fw"></i>
+        UI Elements
+      </a>
+      <a mat-list-item href="">
+        <i class="fas fa-sitemap fa-fw"></i>
+        Menu Levels
       </a>
     </mat-nav-list>
   </mat-sidenav>
