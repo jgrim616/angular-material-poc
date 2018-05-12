@@ -37,16 +37,38 @@ $vertice-dashboard-theme: mat-light-theme(
   color: mat-color($vertice-card-font-gray, 500) !important;
 }
 
-.mat-list-item {
+.mat-list-item,
+.mat-expansion-panel {
   color: mat-color($vertice-card-font-gray, 50, 0.5) !important;
 }
 
-.mat-list-item:hover {
+.mat-list-item:hover,
+.mat-expansion-panel:hover {
   background-color: mat-color($vertice-header-dark-gray, 700);
+  color: mat-color($vertice-card-font-gray, 50) !important;
+}
+
+.mat-expanded {
+  background-color: mat-color($vertice-expansion-dark-gray, 500);
   color: mat-color($vertice-card-font-gray, 50) !important;
 }
 
 .active {
   background-color: mat-color($vertice-header-dark-gray, A100) !important;
   color: mat-color($vertice-card-font-gray, 50) !important;
+}
+
+.sidenav-container {
+  background-color: mat-color($vertice-container-background-gray, 500);
+}
+
+.mat-card {
+  background-color: mat-color($vertice-container-background-gray, A100);
+}
+
+.header {
+  background-color: mat-color(
+    $vertice-container-background-gray,
+    900
+  ) !important;
 }

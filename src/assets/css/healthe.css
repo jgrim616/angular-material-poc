@@ -1,6 +1,5 @@
 .mat-card-title {
   font-size: 1.1rem !important;
-  /* color: #65646a; */
 }
 
 .iconnav img,
@@ -13,9 +12,11 @@
   text-decoration: none !important;
   font-size: 1rem;
 }
+
 .iconnav img {
   width: 140px;
 }
+
 .iconnav img:hover {
   width: 160px;
 }
@@ -32,7 +33,8 @@
   height: 70px !important;
 }
 
-.mat-list-item-content {
+.mat-list-item-content,
+.mat-expansion-panel-header {
   margin: 0;
   font-family: 'Libre Franklin', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
@@ -41,8 +43,35 @@
   font-weight: 400;
   line-height: 1.5;
   text-align: left;
+  height: 51px !important;
 }
 
 .fa-fw {
   width: 2em !important;
+}
+
+.mat-expansion-panel {
+  box-shadow: none !important;
+}
+
+.mat-expansion-panel-header {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  font-size: 14px;
+}
+
+.mat-expansion-panel-body {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.mat-nav-list {
+  padding-top: 0px !important;
+}
+
+.mat-nav-list-item-expansion {
+  height: 41px !important;
+  padding-left: 24px;
+  padding-right: 24px;
 }

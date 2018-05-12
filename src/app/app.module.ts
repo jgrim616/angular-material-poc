@@ -17,6 +17,8 @@ import {
   MatCardModule,
   MatMenuModule
 } from '@angular/material';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatExpansionPanel } from '@angular/material/expansion';
 import { MainNavComponent } from './main-nav/main-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MainTableComponent } from './main-table/main-table.component';
@@ -48,7 +50,8 @@ import { AppRoutingModule } from './app-routing.module';
     MatSortModule,
     MatGridListModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
