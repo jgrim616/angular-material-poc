@@ -2,7 +2,7 @@
   font-size: 1.1rem !important;
 }
 
-.iconnav img,
+/* .iconnav img,
 .iconnav img:hover {
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
@@ -19,14 +19,57 @@
 
 .iconnav img:hover {
   width: 160px;
+} */
+
+/* Reusable Animation Class */
+.iconnav img,
+.iconnav img:hover {
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
+/* Custom Icon Nav Menu */
+.iconnav {
+  text-align: center;
+  min-height: 195px;
+}
+.iconnav a {
+  text-decoration: none !important;
+  color: #65646a !important;
+}
+.iconnav img {
+  /* width: 65%; */
+  width: 114px;
+  max-width: 140px;
+}
+.iconnav img:hover {
+  /* width: 75%; */
+  width: 135px;
+  max-width: 160px;
+}
+
+/* Vertice Logo Resizer */
 .vertice {
   width: 200px;
   height: 52px;
-  display: block;
   margin-left: auto;
   margin-right: auto;
+}
+@media all and (max-width: 770px) {
+  .vertice {
+    width: 150px;
+    height: 39px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media all and (max-width: 450px) {
+  .vertice {
+    width: 120px;
+    height: 31px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .sidebar-header {
