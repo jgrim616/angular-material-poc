@@ -134,7 +134,6 @@
   font-size: 1.45rem;
   font-weight: 400;
   margin-bottom: 0;
-  /* padding-left: 39px; */
 }
 
 .title-description {
@@ -142,5 +141,8 @@
   font-size: 0.9rem;
   font-weight: normal;
   color: #7e8e9f;
-  /* padding-left: 39px; */
+}
+
+.mat-button {
+  border: 1px solid !important;
 }
