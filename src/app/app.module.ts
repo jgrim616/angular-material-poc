@@ -24,11 +24,13 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MainTableComponent } from './main-table/main-table.component';
 import { MainDashComponent } from './main-dash/main-dash.component';
 import { CustomerDashComponent } from './customer-dash/customer-dash.component';
+import { ButtonDashComponent } from './button-dash/button-dash.component';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
+    ButtonDashComponent,
     CustomerDashComponent,
     MainNavComponent,
     MainTableComponent,

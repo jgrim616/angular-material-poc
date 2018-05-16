@@ -14,14 +14,263 @@ $vertice-dashboard-theme: mat-light-theme(
   $vertice-dashboard-accent
 );
 
+@include mat-toolbar-theme($vertice-dashboard-theme);
+
+// Vertice Button Themes
+// $vertice-primarybutton-primary: mat-palette($vertice-primary, 500, 100, 900);
+// $vertice-secondarybutton-primary: mat-palette(
+//   $vertice-secondary,
+//   500,
+//   100,
+//   900
+// );
+// $vertice-warnbutton-primary: mat-palette($vertice-warn, 500, 100, 900);
+// $vertice-successbutton-primary: mat-palette($vertice-success, 500, 100, 900);
+// $vertice-infobutton-primary: mat-palette($vertice-info, 500, 100, 900);
+// $vertice-dangerbutton-primary: mat-palette($vertice-danger, 500, 100, 900);
+
+// $vertice-primarybutton-theme: mat-light-theme(
+//   $vertice-primarybutton-primary,
+//   $vertice-dashboard-accent
+// );
+
+button.vertice-primary {
+  // @include mat-button-theme($vertice-primarybutton-theme);
+  // @include angular-material-theme($vertice-primarybutton-theme);
+  background-color: mat-color($vertice-primary, 500);
+  color: #fff;
+}
+
+button.vertice-primary:hover {
+  background-color: #0095bd;
+  border-color: #008bb0;
+}
+
+button.vertice-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 179, 227, 0.5);
+}
+
+button.vertice-primary-outline {
+  color: #00b3e3;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid;
+  border-color: #00b3e3 !important;
+}
+
+button.vertice-primary-outline:hover {
+  color: #ffffff;
+  background-color: #00b3e3;
+  border-color: #00b3e3;
+}
+
+button.vertice-primary-outline:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 179, 227, 0.5);
+}
+
+button.vertice-secondary {
+  background-color: mat-color($vertice-secondary, 500);
+  color: #ffffff;
+}
+
+button.vertice-secondary:hover {
+  color: #fff;
+  background-color: #005fa3;
+  border-color: #005796;
+}
+
+button.vertice-secondary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 117, 201, 0.5);
+}
+
+button.vertice-secondary-outline {
+  color: mat-color($vertice-secondary, 500);
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid;
+  border-color: mat-color($vertice-secondary, 500) !important;
+}
+
+button.vertice-secondary-outline:hover {
+  color: #ffffff;
+  background-color: mat-color($vertice-secondary, 500);
+  border-color: mat-color($vertice-secondary, 500);
+}
+
+button.vertice-secondary-outline:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 117, 201, 0.5);
+}
+
+button.vertice-warn {
+  background-color: mat-color($vertice-warn, 500);
+}
+
+button.vertice-warn:hover {
+  color: #212529;
+  background-color: #ffb932;
+  border-color: #ffb525;
+}
+
+button.vertice-warn:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 198, 88, 0.5);
+}
+
+button.vertice-warn-outline {
+  color: mat-color($vertice-warn, 500);
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid;
+  border-color: mat-color($vertice-warn, 500) !important;
+}
+
+button.vertice-warn-outline:hover {
+  color: #212529;
+  background-color: mat-color($vertice-warn, 500);
+  border-color: mat-color($vertice-warn, 500);
+}
+
+button.vertice-warn-outline:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 198, 88, 0.5);
+}
+
+button.vertice-success {
+  background-color: mat-color($vertice-success, 500);
+  color: #ffffff;
+}
+
+button.vertice-success:hover {
+  color: #fff;
+  background-color: #237948;
+  border-color: #207042;
+}
+
+button.vertice-success:focus {
+  box-shadow: 0 0 0 0.2rem rgba(44, 151, 90, 0.5);
+}
+
+button.vertice-success-outline {
+  color: mat-color($vertice-success, 500);
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid;
+  border-color: mat-color($vertice-success, 500) !important;
+}
+
+button.vertice-success-outline:hover {
+  color: #ffffff;
+  background-color: mat-color($vertice-success, 500);
+  border-color: mat-color($vertice-success, 500);
+}
+
+button.vertice-success-outline:focus {
+  box-shadow: 0 0 0 0.2rem rgba(44, 151, 90, 0.5);
+}
+
+button.vertice-info {
+  background-color: mat-color($vertice-info, 500);
+  color: #ffffff;
+}
+
+button.vertice-info:hover {
+  color: #fff;
+  background-color: #645eac;
+  border-color: #5c56a7;
+}
+
+button.vertice-info:focus {
+  box-shadow: 0 0 0 0.2rem rgba(124, 119, 185, 0.5);
+}
+
+button.vertice-info-outline {
+  color: mat-color($vertice-info, 500);
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid;
+  border-color: mat-color($vertice-info, 500) !important;
+}
+
+button.vertice-info-outline:hover {
+  color: #ffffff;
+  background-color: mat-color($vertice-info, 500);
+  border-color: mat-color($vertice-info, 500);
+}
+
+button.vertice-info-outline:focus {
+  box-shadow: 0 0 0 0.2rem rgba(124, 119, 185, 0.5);
+}
+
+button.vertice-danger {
+  background-color: mat-color($vertice-danger, 500);
+  color: #ffffff;
+}
+
+button.vertice-danger:hover {
+  color: #fff;
+  background-color: #e64a30;
+  border-color: #e44025;
+}
+
+button.vertice-danger:focus {
+  box-shadow: 0 0 0 0.2rem rgba(234, 104, 82, 0.5);
+}
+
+button.vertice-danger-outline {
+  color: mat-color($vertice-danger, 500);
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid;
+  border-color: mat-color($vertice-danger, 500) !important;
+}
+
+button.vertice-danger-outline:hover {
+  color: #ffffff;
+  background-color: mat-color($vertice-danger, 500);
+  border-color: mat-color($vertice-danger, 500);
+}
+
+button.vertice-danger-outline:focus {
+  box-shadow: 0 0 0 0.2rem rgba(234, 104, 82, 0.5);
+}
+
+button.vertice-gray {
+  background-color: #65646a;
+  color: #ffffff;
+}
+
+button.vertice-gray:hover {
+  color: #fff;
+  background-color: #525156;
+  border-color: #4c4b50;
+}
+
+button.vertice-gray:focus {
+  box-shadow: 0 0 0 0.2rem rgba(101, 100, 106, 0.5);
+}
+
+button.vertice-gray-outline {
+  color: #65646a;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid;
+  border-color: #65646a !important;
+}
+
+button.vertice-gray-outline:hover {
+  color: #ffffff;
+  background-color: #65646a;
+  border-color: #65646a;
+}
+
+button.vertice-gray-outline:focus {
+  box-shadow: 0 0 0 0.2rem rgba(101, 100, 106, 0.5);
+}
+
 // Include the theme styles for only specified components or use angular-material-theme for all of them
 //    List of components can be found here:
 //        https://github.com/angular/material2/blob/a292d31023abd4926db322a9a41d71db09e189b5/src/lib/core/theming/_all-theme.scss
 // @include mat-core-theme($vertice-app-theme);
-// @include mat-button-theme($vertice-app-theme);
 // @include mat-checkbox-theme($vertice-app-theme);
-// @include angular-material-theme($vertice-app-theme);
-@include mat-toolbar-theme($vertice-dashboard-theme);
+// @include angular-material-theme($vertice-dashboard-theme);
 
 /////////////////////////////////////////////////////////////////////
 // Custom Theme Colors
@@ -33,7 +282,8 @@ $vertice-dashboard-theme: mat-light-theme(
 
 .mat-card-title,
 .iconnav a,
-.dashboard-card-content {
+.dashboard-card-content,
+.title {
   color: mat-color($vertice-card-font-gray, 500) !important;
 }
 
@@ -71,4 +321,16 @@ $vertice-dashboard-theme: mat-light-theme(
     $vertice-container-background-gray,
     900
   ) !important;
+}
+
+.title-description {
+  color: mat-color($vertice-titlecolors, 500);
+}
+
+.mat-button,
+.mat-raised-button {
+  font-size: 1rem;
+  margin-left: 2px !important;
+  margin-right: 2px !important;
+  margin-bottom: 5px !important;
 }

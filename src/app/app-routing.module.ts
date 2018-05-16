@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { MainDashComponent } from './main-dash/main-dash.component';
 import { MainTableComponent } from './main-table/main-table.component';
 import { CustomerDashComponent } from './customer-dash/customer-dash.component';
+import { ButtonDashComponent } from './button-dash/button-dash.component';
 
 const routes: Routes = [
   { path: 'dashboard', component: MainDashComponent },
@@ -13,6 +14,10 @@ const routes: Routes = [
   {
     path: 'customers',
     component: CustomerDashComponent
+  },
+  {
+    path: 'buttons',
+    component: ButtonDashComponent
   }
 ];
 
