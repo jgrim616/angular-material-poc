@@ -122,10 +122,10 @@
 .title-block {
   padding-bottom: 15px;
   margin-bottom: 30px;
-  border-bottom: 1px solid #d7dde4;
+  /* border-bottom: 1px solid #d7dde4;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: rgb(215, 221, 228);
+  border-bottom-color: rgb(215, 221, 228); */
   padding-left: 39px;
   padding-right: 39px;
 }
@@ -133,11 +133,10 @@
 .title {
   font-size: 1.45rem;
   font-weight: 400;
-  margin-bottom: 0;
+  margin-bottom: 2px;
 }
 
 .title-description {
-  margin: 0;
   font-size: 0.9rem;
   font-weight: normal;
   color: #7e8e9f;

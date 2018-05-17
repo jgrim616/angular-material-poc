@@ -14,7 +14,8 @@ $vertice-dashboard-theme: mat-light-theme(
   $vertice-dashboard-accent
 );
 
-@include mat-toolbar-theme($vertice-dashboard-theme);
+// @include mat-toolbar-theme($vertice-dashboard-theme);
+@include angular-material-theme($vertice-dashboard-theme);
 
 // Vertice Button Themes
 // $vertice-primarybutton-primary: mat-palette($vertice-primary, 500, 100, 900);
@@ -292,8 +293,10 @@ button.vertice-gray-outline:focus {
 }
 
 .mat-list-item,
-.mat-expansion-panel {
+.mat-expansion-panel,
+.mat-expansion-indicator:after {
   color: mat-color($vertice-card-font-gray, 50, 0.5) !important;
+  background-color: mat-color($vertice-header-dark-gray, 500);
 }
 
 .mat-list-item:hover,

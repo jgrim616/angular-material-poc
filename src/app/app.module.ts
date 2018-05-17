@@ -19,6 +19,7 @@ import {
 } from '@angular/material';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatExpansionPanel } from '@angular/material/expansion';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MainNavComponent } from './main-nav/main-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MainTableComponent } from './main-table/main-table.component';
@@ -42,6 +43,7 @@ import { AppRoutingModule } from './app-routing.module';
     BrowserAnimationsModule,
     MatCheckboxModule,
     LayoutModule,
+    MatSnackBarModule,
     MatToolbarModule,
     MatButtonModule,
     MatSidenavModule,
